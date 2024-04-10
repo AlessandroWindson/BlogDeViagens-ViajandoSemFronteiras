@@ -1,0 +1,448 @@
+/* Estilos Personalizados */
+
+/* Barra Lateral */
+#favicon {
+  border-radius: 50%;
+}
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  height: 100%;
+  width: 250px;
+  background-color: #000;
+  padding-top: 50px;
+  transition: all 0.3s ease;
+}
+
+#sidebar.open {
+  left: 0;
+}
+
+#sidebarToggle {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+
+#closeSidebar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* Artigos */
+.article {
+  margin-bottom: 40px;
+}
+
+.article header {
+  margin-bottom: 10px;
+}
+
+.article-content {
+  font-size: 16px;
+}
+
+/* Animação na Rotação */
+.animated {
+  animation: rotateIn 1s;
+}
+
+@keyframes rotateIn {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Barra de Progresso */
+.progress-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: #007bff;
+  z-index: 1000;
+  overflow: hidden; /* Para esconder o overflow da barra de progresso */ 
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0;
+  background-color: #17a2b8;
+  transition: width 10.0s ease; /* Transição suave da largura da barra */
+}
+
+/* React Component Styles */
+#root {
+  margin-top: 50px;
+}
+
+/* Estilos Globais */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.navbar {
+  border-bottom: 1px solid #ddd;
+}
+
+.footer {
+  background-color: #000;
+  color: #000;
+  border-top: 1px solid #f8f9fa;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Barra de Navegação */
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.nav-link {
+  font-size: 18px;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 123, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Barra de Pesquisa */
+.form-control,
+.btn-outline-success {
+  border-radius: 20px;
+}
+
+.btn-outline-success {
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.btn-outline-success:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Carrossel */
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #007bff;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+/* Cards de Destaque */
+.card {
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-text {
+  font-size: 18px;
+  color: #666;
+}
+
+.btn-primary {
+  border-radius: 20px;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* Rodapé */
+.footer h5 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+}
+
+.footer p {
+  font-size: 18px;
+}
+
+.footer a {
+  color: #000;
+}
+
+/* Modal */
+.modal-body {
+  text-align: center;
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeft 1s ease;
+}
+
+/* Novas Animações */
+@keyframes slideFromBottom {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-from-bottom {
+  animation: slideFromBottom 1s ease;
+}
+
+@keyframes fadeInScale {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.fade-in-scale {
+  animation: fadeInScale 1s ease;
+}
+
+/* Estilos específicos para as páginas */
+
+/* Destino dos Sonhos */
+.destino-dos-sonhos {
+  background-color: #ffd700;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.destino-dos-sonhos h2 {
+  color: #007bff;
+}
+
+.destino-dos-sonhos p {
+  font-size: 18px;
+}
+
+/* Cultura Local */
+.cultura-local {
+  background-color: #20b2aa;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.cultura-local h2 {
+  color: #fff;
+}
+
+.cultura-local p {
+  font-size: 18px;
+}
+
+/* Aventuras Inesquecíveis */
+.aventuras-inesqueciveis {
+  background-color: #ffa07a;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.aventuras-inesqueciveis h2 {
+  color: #008000;
+}
+
+.aventuras-inesqueciveis p {
+  font-size: 18px;
+}
+
+/* Estilos para página de Artigo */
+.article {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.article h1 {
+  color: #007bff;
+}
+
+.article-meta {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.article-content p {
+  font-size: 16px;
+}
+
+.article-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Estilos para página de Contato */
+.contact-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  margin-top: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-item {
+    margin-bottom: 10px;
+  }
+
+  .navbar-toggler {
+    margin: 10px auto;
+  }
+}
+
+/* Adicionado após a atualização */
+:root{
+    --lightDark:  #6866A3;
+    --dark:  #302f4c;
+    --primary: #673EF0;
+    --secondary: #070999;
+    --light: #007bff;
+    --white: #f9ecf4;
+    --other: #A13EF0;
+    --pink: #F43AAD;
+    --lightBlue: #50B1F5;
+}
+
+html::-webkit-scrollbar {
+    width: 15px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--light);
+    border-radius: 10px;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: var(--pink);
+}
+
+.bg-principal {
+    height: 2000px;
+    background-color: var(--other);
+}
+
+h3 {
+    font-size: 4rem;
+}
+
+p {
+    text-align: justify;
+    font-size: 1.5rem;
+}
+
+.i-span {
+    font-size: 8rem;
+}
+
+footer {
+    height: 500px;
+}
+
+li {
+    font-size: 1.5rem;
+    margin-bottom: 3px;
+}
+
+li:hover {
+    zoom: 1.2;
+}
